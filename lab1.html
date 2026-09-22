@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1 — Форма реєстрації</title>
+    <!-- Підключаємо загальний CSS-файл -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Лабораторна робота №1</h1>
+        <p>Тема: Основи HTML та створення веб-форм</p>
+        <nav>
+            <!-- Посилання на головну сторінку зі списком робіт -->
+            <a href="index.html">← Назад на головну сторінку</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Форма реєстрації користувача</h2>
+
+            <!-- Форма з відправкою даних на Webhook -->
+            <form action="https://webhook.site/YOUR-UNIQUE-ID" method="POST">
+                
+                <div style="margin-bottom: 12px;">
+                    <label for="first_name">Ім'я:</label><br>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+
+                <div style="margin-bottom: 12px;">
+                    <label for="last_name">Прізвище:</label><br>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+
+                <div style="margin-bottom: 12px;">
+                    <label for="email">Електронна пошта:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div style="margin-bottom: 12px;">
+                    <label for="password">Пароль:</label><br>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div style="margin-bottom: 12px;">
+                    <label for="confirm_password">Підтвердження паролю:</label><br>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+
+                <div style="margin-bottom: 12px;">
+                    <label for="birthdate">Дата народження:</label><br>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+
+                <div style="margin-bottom: 12px;">
+                    <label for="gender">Стать:</label><br>
+                    <select id="gender" name="gender">
+                        <option value="">-- Оберіть стать --</option>
+                        <option value="male">Чоловіча</option>
+                        <option value="female">Жіноча</option>
+                        <option value="other">Інша</option>
+                    </select>
+                </div>
+
+                <div style="margin-top: 15px;">
+                    <input type="submit" value="Зареєструватися">
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Артур Будішевський</p>
+    </footer>
+
+</body>
+</html>
